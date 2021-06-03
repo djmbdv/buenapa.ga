@@ -1,5 +1,9 @@
 import Head from 'next/head'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import 'bootstrap-css-only/css/bootstrap.min.css'
+import 'mdbreact/dist/css/mdb.css';
 import styles from '../styles/Home.module.css'
+import { MDBBtn, MDBInput, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBIcon, MDBBadge, MDBContainer, MDBRow, MDBCol} from "mdbreact";
 
 export default function Home() {
   return (
@@ -9,9 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className={styles.main}>
+      <MDBContainer>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Buenapa.ga</a>
+          <MDBBtn>Hola</MDBBtn>
         </h1>
 
         <p className={styles.description}>
@@ -48,7 +53,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </MDBContainer>
 
       <footer className={styles.footer}>
         <a
@@ -56,7 +61,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          {' '} todos los derechos reservados
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
