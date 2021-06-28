@@ -8,7 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "mdbreact": "^5.0.2",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "axios": "^0.21.1",
+    "mdb-react-ui-kit": "^1.0.0-beta7",
     "next": "10.x",
     "react": "17.x",
     "react-dom": "17.x"
